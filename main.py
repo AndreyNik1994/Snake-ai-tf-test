@@ -290,9 +290,6 @@ class SnakeGameGUI:
             self.root.after_cancel(self.after_id)
             self.after_id = None
 
-    def _initialize_agent(self, input_size=10):
-        """Load pretrained model instead of creating new"""
-        self.agent = Agent(input_size=input_size, load_existing=False)
 
 
 if __name__ == "__main__":
